@@ -729,6 +729,8 @@ blockquote {
   background: #3e3e3e;
 }
 
+
+
 /*-----------------------------------------------------------
     Portfolio
 -------------------------------------------------------------*/
@@ -1594,6 +1596,7 @@ textarea {
   }
 }
 @media all and (max-width: 992px) {
+  
   .img-box.horizontal .box-thumb, .img-box.horizontal .box-content {
     width: 100%;
     display: block;
@@ -1627,6 +1630,35 @@ textarea {
     margin-top: 35px;
     padding-top: 50px;
   }
+
+
+.img-box-right {
+  margin-bottom: 40px;
+}
+.img-box-right .box-thumb img {
+  width: 100%;
+}
+.img-box-right .box-content h4 {
+  margin-top: 35px;
+}
+.img-box-right .box-content p {
+  line-height: 26px;
+  margin-bottom: 30px;
+}
+.img-box-right.horizontal .box-thumb, .img-box-right.horizontal .box-content {
+  width: 50%;
+}
+.img-box-right.horizontal .box-thumb {
+  float: right;
+}
+.img-box-right.horizontal .box-content {
+  display: inline-block;
+  padding-left: 30px;
+}
+.img-box-right.horizontal .box-content h4 {
+  margin-top: 30px;
+}
+
 }
 
 .btn {
@@ -1648,5 +1680,107 @@ textarea {
   color: white;
 }
 
+/* Styles for the back to top */
+
+#button {
+  display: inline-block;
+  background-color: #848484;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: #333;
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Styles for the content section */
+
+.content {
+  width: 77%;
+  margin: 50px auto;
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+  color: #6c767a;
+  line-height: 1.9;
+}
+@media (min-width: 500px) {
+  .content {
+    width: 43%;
+  }
+  #button {
+    margin: 30px;
+  }
+}
+.content h1 {
+  margin-bottom: -10px;
+  color: #03a9f4;
+  line-height: 1.5;
+}
+.content h3 {
+  font-style: italic;
+  color: #96a2a7;
+}
 
 
+@media (min-width: 992px) { 
+  .makeright {
+    margin-bottom: 40px;
+  }
+  .makeright .box-thumb img {
+    width: 100%;
+  }
+  .makeright .box-content h4 {
+    margin-top: 35px;
+  }
+  .makeright .box-content p {
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+  .makeright.horizontal .box-thumb, .makeright.horizontal .box-content {
+    width: 50%;
+  }
+  .makeright.horizontal .box-thumb {
+    float: right !important;
+  }
+  .makeright.horizontal .box-content {
+    display: inline-block;
+    padding-left: 30px;
+  }
+  .makeright.horizontal .box-content h4 {
+    margin-top: 30px;
+  }
+
+
+
+}
+
+#inlinelink {
+  color: rgb(0, 100, 140) !important;
+  font-size: 16px !important;
+}
