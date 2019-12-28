@@ -642,6 +642,11 @@ blockquote {
 .img-box .box-thumb img {
   width: 100%;
 }
+
+.img-box .box-thumb video {
+  width: 100%;
+}
+
 .img-box .box-content h4 {
   margin-top: 35px;
 }
