@@ -1772,6 +1772,7 @@ textarea {
   }
   .makeright.horizontal .box-thumb {
     float: right !important;
+    padding-left: 30px;
   }
   .makeright.horizontal .box-content {
     display: inline-block;
