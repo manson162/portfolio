@@ -1812,4 +1812,7 @@ textarea {
 }
 
 
+#logo:hover {
 
+  opacity: .95;
+}
